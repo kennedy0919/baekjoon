@@ -31,8 +31,8 @@ def bfs(r, c):
                             if 0 < arr[nr][nc] < shark:
                                 fish_list.append((dist + 1, nr, nc))
             
-                if fish_list:
-                    break
+            if fish_list:
+                break
 
         if len(fish_list) > 0:
             fish_list.sort()
